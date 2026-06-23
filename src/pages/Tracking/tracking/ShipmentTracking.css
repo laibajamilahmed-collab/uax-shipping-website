@@ -1,0 +1,182 @@
+.tracking-section {
+  background: #f6f6f6;
+}
+
+/* Heading */
+
+.tracking-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #333;
+}
+
+.tracking-subtitle {
+  max-width: 700px;
+  margin: auto;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Card */
+
+.tracking-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  transition: 0.4s;
+}
+
+.tracking-card:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Tabs */
+
+.tracking-tabs {
+  display: flex;
+}
+
+.tracking-tabs button {
+  border: none;
+  background: #f1f1f1;
+  padding: 12px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tracking-tabs button.active {
+  background: white;
+  border-bottom: 2px solid #ff0000;
+}
+
+.tracking-tabs button:hover {
+  color: red;
+}
+
+/* Content */
+
+.tracking-content {
+  padding: 30px;
+}
+
+.tracking-content h4 {
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Form */
+
+.tracking-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tracking-form input {
+  flex: 1;
+  height: 55px;
+  border: 1px solid #ccc;
+  padding: 0 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.tracking-form input:focus {
+  border-color: red;
+}
+
+.tracking-form button {
+  width: 130px;
+  border: none;
+  background: red;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.tracking-form button:hover {
+  background: #cc0000;
+  transform: translateY(-2px);
+}
+
+/* Links */
+
+.tracking-links {
+  display: flex;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.tracking-links a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+/* Sidebar */
+
+.freight-box {
+  border: 1px solid #ddd;
+  background: white;
+}
+
+.freight-title {
+  background: red;
+  color: white;
+  padding: 14px;
+  font-weight: 600;
+}
+
+.freight-box ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.freight-box li {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.freight-box li:hover {
+  background: #f5f5f5;
+  padding-left: 20px;
+}
+
+.freight-box li.active {
+  background: #444;
+  color: white;
+}
+
+.freight-box li span {
+  font-size: 18px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .tracking-title {
+    font-size: 30px;
+  }
+
+  .tracking-form {
+    flex-direction: column;
+  }
+
+  .tracking-form button {
+    width: 100%;
+    height: 50px;
+  }
+
+  .tracking-tabs {
+    flex-wrap: wrap;
+  }
+
+  .tracking-tabs button {
+    flex: 1;
+  }
+}

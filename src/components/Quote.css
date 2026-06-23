@@ -1,0 +1,132 @@
+.quote-section {
+  padding: 80px 0;
+  background: #f5f5f5;
+}
+
+/* Left Content */
+
+.download-buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+}
+
+.download-btn {
+  background: #555;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background: #ff0000;
+  transform: translateY(-3px);
+}
+
+.content-text p {
+  color: #666;
+  line-height: 1.9;
+  margin-bottom: 25px;
+}
+
+/* Quote Card */
+
+.quote-card {
+  background: white;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  border: 1px solid #e5e5e5;
+  transition: all .3s ease;
+}
+
+.quote-card:hover {
+  transform: translateY(-5px);
+}
+
+.quote-header {
+  background: #ff0000;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-size: 24px;
+  font-weight: 600;
+  margin: -18px -18px 25px;
+}
+
+.custom-input {
+  border-radius: 0;
+  height: 50px;
+  transition: all .3s ease;
+}
+
+textarea.custom-input {
+  height: auto;
+}
+
+.custom-input:focus {
+  border-color: #ff0000;
+  box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.15);
+}
+
+.quote-btn {
+  background: #ff0000;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  font-weight: 600;
+  transition: all .3s ease;
+}
+
+.quote-btn:hover {
+  background: #d80000;
+  transform: translateY(-2px);
+}
+
+/* Animation */
+
+.fade-up {
+  animation: fadeUp .8s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 991px) {
+  .quote-section {
+    padding: 60px 0;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 576px) {
+  .download-buttons {
+    flex-direction: column;
+  }
+
+  .download-btn {
+    width: 100%;
+  }
+
+  .quote-header {
+    font-size: 18px;
+  }
+
+  .quote-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,114 @@
+.freight-banner {
+  position: relative;
+  min-height: 500px;
+  background: url("/assets/images/Freightbanner.jpg")
+    center center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(140, 0, 0, 0.55);
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  animation: fadeUp 1.2s ease;
+}
+
+.banner-content h5 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.banner-content h1 {
+  font-size: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.banner-content h3 {
+  color: #ffc107;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.banner-btn {
+  background: #ff0000;
+  color: white;
+  border: none;
+  padding: 14px 35px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.banner-btn:hover {
+  background: white;
+  color: red;
+  transform: translateY(-5px);
+}
+
+/* Animation */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+  .banner-content h1 {
+    font-size: 36px;
+  }
+
+  .banner-content h3 {
+    font-size: 24px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .freight-banner {
+    min-height: 400px;
+    padding: 20px;
+  }
+
+  .banner-content h5 {
+    font-size: 14px;
+  }
+
+  .banner-content h1 {
+    font-size: 26px;
+  }
+
+  .banner-content h3 {
+    font-size: 18px;
+  }
+
+  .banner-btn {
+    padding: 12px 25px;
+    font-size: 12px;
+  }
+}

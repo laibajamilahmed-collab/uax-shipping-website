@@ -1,0 +1,148 @@
+.hero-slider {
+  height: 600px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: all 1s ease-in-out;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: none;
+  background: transparent;
+}
+
+.slider-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  padding: 20px;
+  animation: fadeUp 1s ease;
+}
+
+.slider-content h5 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.slider-content h1 {
+  color: #ffc107;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.slider-content p {
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  background: red;
+  color: white;
+  border: none;
+  padding: 12px 35px;
+  font-weight: 600;
+  transition: .4s;
+}
+
+.hero-btn:hover {
+  background: white;
+  color: red;
+  transform: translateY(-3px);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+
+  width: 50px;
+  height: 50px;
+
+  border: none;
+  background: rgba(255,255,255,.15);
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.arrow:hover {
+  background: red;
+}
+
+.left {
+  left: 20px;
+}
+
+.right {
+  right: 20px;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+  .hero-slider {
+    height: 500px;
+  }
+
+  .slider-content h1 {
+    font-size: 42px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .hero-slider {
+    height: 450px;
+  }
+
+  .slider-content h1 {
+    font-size: 30px;
+  }
+
+  .slider-content h5 {
+    font-size: 18px;
+  }
+
+  .slider-content p {
+    font-size: 13px;
+  }
+
+  .arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
+
+  .hero-btn {
+    padding: 10px 25px;
+  }
+}

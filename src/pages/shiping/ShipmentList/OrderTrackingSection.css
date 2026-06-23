@@ -1,0 +1,147 @@
+.order-section {
+  padding: 80px 0;
+  background: #f5f5f5;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Table */
+
+.order-table {
+  background: white;
+}
+
+.order-table thead th {
+  background: #ff0000;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border: none;
+}
+
+.order-table tbody tr {
+  animation: fadeUp 0.6s ease;
+  transition: 0.3s;
+}
+
+.order-table tbody tr:hover {
+  background: #fafafa;
+}
+
+.order-table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.status {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.processing {
+  background: #fff4d6;
+  color: #d38b00;
+}
+
+.confirm {
+  background: #dff6e3;
+  color: #0d8b35;
+}
+
+.action-btn {
+  border: none;
+  background: transparent;
+  color: #ff0000;
+  font-size: 18px;
+  transition: .3s;
+}
+
+.action-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Sidebar */
+
+.tracking-card {
+  background: white;
+  box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+.card-header-red {
+  background: #ff0000;
+  color: white;
+  padding: 18px;
+  font-weight: 600;
+}
+
+.tracking-btn {
+  width: 100%;
+  border: none;
+  background: #f4f4f4;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  transition: .3s;
+}
+
+.tracking-btn:hover {
+  background: #666;
+  color: white;
+}
+
+.tracking-btn.active {
+  background: #777;
+  color: white;
+}
+
+.order-btn {
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  padding: 16px;
+  background: #ff0000;
+  color: white;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.order-btn:hover {
+  background: #d70000;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 991px) {
+  .tracking-card {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 28px;
+  }
+
+  .order-section {
+    padding: 50px 0;
+  }
+}
