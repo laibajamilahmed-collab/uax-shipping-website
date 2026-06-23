@@ -1,0 +1,105 @@
+.services-section {
+  background: #f5f5f5;
+}
+
+.service-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+}
+
+.service-text {
+  color: #777;
+  font-size: 14px;
+}
+
+.service-card {
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.4s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.service-card:hover img {
+  transform: scale(1.1);
+}
+
+.service-content {
+  padding: 20px;
+}
+
+.service-content h5 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.service-content p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.service-content a {
+  color: red;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.corner {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 25px solid red;
+  border-left: 25px solid transparent;
+}
+
+/* Animation */
+
+.service-card {
+  animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .service-title {
+    font-size: 24px;
+  }
+
+  .service-card img {
+    height: 200px;
+  }
+}
+
+
+
+
+

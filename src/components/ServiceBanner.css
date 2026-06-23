@@ -1,0 +1,148 @@
+.service-banner {
+  position: relative;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+
+  background-image: url("/public/assets/images/Oceanfreight2.jpg");
+  background-size: cover;
+  background-position: center;
+
+  overflow: hidden;
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 0, 0, 0.7);
+}
+
+/* Red gradient effect */
+.service-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(180, 0, 0, 0.25),
+    transparent
+  );
+
+  z-index: 1;
+}
+
+.service-banner .container {
+  position: relative;
+  z-index: 2;
+}
+
+.banner-content {
+  animation: slideLeft 1s ease;
+}
+
+.banner-content h1 {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.breadcrumb-custom {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.breadcrumb-custom a {
+  color: #ff2b2b;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.breadcrumb-custom a:hover {
+  color: #ffffff;
+}
+
+.breadcrumb-custom span {
+  color: #ffffff;
+}
+
+.banner-message {
+  animation: slideRight 1s ease;
+}
+
+.banner-message h4 {
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.5;
+  max-width: 500px;
+  margin-left: auto;
+}
+
+.banner-message span {
+  color: #ff0000;
+}
+
+/* Animations */
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 991px) {
+  .service-banner {
+    min-height: 220px;
+    text-align: center;
+  }
+
+  .banner-message h4 {
+    margin: 20px auto 0;
+    font-size: 22px;
+  }
+
+  .breadcrumb-custom {
+    justify-content: center;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 576px) {
+  .service-banner {
+    padding: 40px 0;
+  }
+
+  .banner-content h1 {
+    font-size: 30px;
+  }
+
+  .banner-message h4 {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+}
